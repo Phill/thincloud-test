@@ -19,10 +19,12 @@ Gem::Specification.new do |s|
   s.version       = Thincloud::Test::VERSION
 
   s.add_dependency "cane", "~> 2.5.2"
-  s.add_dependency "guard", "~> 1.6.2"
+  s.add_dependency "guard", "~> 1.7.0"
   s.add_dependency "minitest", "~> 4.6.2"
   s.add_dependency "minitest-reporters", "~> 0.14.7"
   s.add_dependency "guard-minitest", "~> 0.5.0"
+  s.add_dependency "listen", "~> 0.7.0"
+  s.add_dependency "rb-inotify", "~> 0.9.0"
   s.add_dependency "rb-fsevent", "~> 0.9.1"
   s.add_dependency "simplecov", "~> 0.7.1"
   s.add_dependency "terminal-notifier-guard", "~> 1.5.3"

@@ -23,7 +23,8 @@ Gem::Specification.new do |s|
   s.add_dependency "minitest", "~> 4.6.2"
   s.add_dependency "minitest-reporters", "~> 0.14.7"
   s.add_dependency "guard-minitest", "~> 0.5.0"
-  s.add_dependency "rb-fsevent", "~> 0.9.1"
+  s.add_dependency "rb-fsevent", "~> 0.9.1" if RUBY_PLATFORM =~ /darwin/i
+  s.add_dependency "rb-inotify", "~> 0.8.8" if RUBY_PLATFORM =~ /linux/i
   s.add_dependency "simplecov", "~> 0.7.1"
   s.add_dependency "terminal-notifier-guard", "~> 1.5.3"
   s.add_dependency "thor", "~> 0.17.0"
